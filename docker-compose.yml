@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  gateway:
+    build: .
+    image: gateway:v1
+    ports:
+      - "8760:8760"

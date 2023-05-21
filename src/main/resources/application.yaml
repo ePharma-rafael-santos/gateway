@@ -1,0 +1,18 @@
+server:
+  port: 8760
+
+spring:
+  application:
+    name: Gateway
+
+management:
+  endpoints.web.exposure.include=*
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
